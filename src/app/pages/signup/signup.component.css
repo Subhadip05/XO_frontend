@@ -1,0 +1,10 @@
+.full-width{
+    width: 100%;
+}
+.mat-form-field{
+    color: rgb(183, 218, 249);
+    height: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

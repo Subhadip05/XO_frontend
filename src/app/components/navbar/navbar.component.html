@@ -1,0 +1,44 @@
+
+<mat-toolbar color="primary" style="height: 55px;">
+    <a 
+    routerLink="/"
+    mat-icon-button class="Home-icon" matTooltip="Home Page">
+      <mat-icon>home</mat-icon>
+    </a>
+    <span>ExamOn</span>
+    <span class="example-spacer"></span>
+
+    <a 
+    *ngIf="!isLoggedIN"
+    [routerLink]="'/login'"
+    mat-icon-button class="login-icon" 
+    matTooltip="Login Page">
+      <mat-icon>login</mat-icon>
+    </a>
+    
+    
+    <a 
+    *ngIf="!isLoggedIN"
+    [routerLink]="'/signup'"
+    mat-icon-button class="signup-icon"
+    matTooltip="Register Page">
+      <mat-icon>app_registration</mat-icon>
+    </a>
+
+
+    <a 
+    (click)="logOut()"
+    *ngIf="isLoggedIN"
+    style="margin-right: 30px;"
+    mat-icon-button class="signup-icon"
+    matTooltip="Logout">
+      <mat-icon>logout</mat-icon>
+    </a>
+
+    
+    
+  </mat-toolbar> 
+
+
+  
+  
